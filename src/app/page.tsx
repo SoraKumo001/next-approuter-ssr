@@ -1,5 +1,5 @@
 "use client";
-import { useSSR } from "next-ssr";
+import { SSRHead, useSSR } from "next-ssr";
 import Link from "next/link";
 
 interface Center {
@@ -24,9 +24,9 @@ const Page = () => {
   if (!data) return <div>loading</div>;
   return (
     <>
-      <head>
+      <SSRHead>
         <title>天気予報地域一覧</title>
-      </head>
+      </SSRHead>
       <div>
         {data &&
           Object.entries(data.offices).map(([code, { name }]) => (

@@ -1,5 +1,5 @@
 "use client";
-import { useSSR } from "next-ssr";
+import { useSSR, SSRHead } from "next-ssr";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
@@ -34,9 +34,9 @@ const Page = () => {
   const { targetArea, reportDatetime, headlineText, text } = data;
   return (
     <>
-      <head>
+      <SSRHead>
         <title>{targetArea}</title>
-      </head>
+      </SSRHead>
       <div
         style={
           isLoading ? { background: "gray", position: "relative" } : undefined

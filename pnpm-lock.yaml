@@ -12,8 +12,8 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-ssr:
-        specifier: ^1.1.1
-        version: 1.1.1
+        specifier: ^1.2.0
+        version: 1.2.0
     devDependencies:
       '@types/node':
         specifier: 22.7.7
@@ -247,8 +247,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  next-ssr@1.1.1:
-    resolution: {integrity: sha512-HY3QR2tq+v9XB8BPotrTUmXEPIe8jf08SI0rPWlcSLMbe0b8XmpwuRcZw4YKnrCnwUMhF57DJ7nThNnnXJTOMQ==}
+  next-ssr@1.2.0:
+    resolution: {integrity: sha512-cVAEMkFRPL1zaDAUChYxHtihB+j/Q0IGuwrGfC/Zrh8/g82e7vzXqCKVqLdHbhmPwzwnJ7XEVWCHy61bzvmc2Q==}
 
   next@15.0.0:
     resolution: {integrity: sha512-/ivqF6gCShXpKwY9hfrIQYh8YMge8L3W+w1oRLv/POmK4MOQnh+FscZ8a0fRFTSQWE+2z9ctNYvELD9vP2FV+A==}
@@ -503,7 +503,7 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  next-ssr@1.1.1: {}
+  next-ssr@1.2.0: {}
 
   next@15.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

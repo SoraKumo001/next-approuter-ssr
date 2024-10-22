@@ -1,4 +1,4 @@
-import { SSRProvider } from "next-ssr";
+import { SSRHeadRoot, SSRProvider } from "next-ssr";
 
 export default function RootLayout({
   children,
@@ -6,10 +6,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <SSRProvider>
-      <html lang="en">
+    <html lang="en">
+      <SSRProvider>
+        <head>
+          <SSRHeadRoot />
+        </head>
         <body>{children}</body>
-      </html>
-    </SSRProvider>
+      </SSRProvider>
+    </html>
   );
 }
